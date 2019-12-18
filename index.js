@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const dotenv = require('dotenv').config();
 const ctrl = require('./controller');
 
 const app = express();
