@@ -14,7 +14,7 @@ app.get('/item/:id', ctrl.getItem);
 
 app.put('/item/:id', ctrl.editItem);
 app.post('/item/', ctrl.addItem);
-app.post('/remove', ctrl.removeItem);
+app.delete('/remove/:id', ctrl.removeItem);
 
 app.listen(port,
     () => console.log('Express server listening on: ', port));
